@@ -1,0 +1,10 @@
+{
+  "name": "Wheee",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Let's you know when an audible tab is closed",
+  "background": {
+    "persistent": true,
+    "scripts": ["wheee.js"]
+  }
+}
