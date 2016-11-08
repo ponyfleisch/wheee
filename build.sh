@@ -21,7 +21,7 @@ function build() {
 	echo "building wheee v${version}@${browser}"
 
 	mkdir -vp build/${browser}
-	cp -v wheee.js scratch.mp3 build/${browser}/
+	cp -v wheee.js scratch.mp3 *.png build/${browser}/
 	manifest ${browser} >build/${browser}/manifest.json
 
 	zip -j build/${product} build/${browser}/*
@@ -41,6 +41,11 @@ function manifest() {
 		"name": "Wheee",
 		"version": "${version}",
 		"description": "Lets you know when an audible tab is closed",
+		"icons": {
+			"16": "icon-16.png",
+			"48": "icon-48.png",
+			"128": "icon-128.png"
+		},
 		"background": {
 			"persistent": true,
 			"scripts": [
