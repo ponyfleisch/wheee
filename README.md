@@ -1,4 +1,4 @@
-# wheee chrome extension
+# wheee chrome & firefox extension
 
 Makes a vinyl scratch sound when an audible tab is closed.
 
