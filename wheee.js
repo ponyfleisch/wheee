@@ -1,6 +1,7 @@
 "use strict";
 var audiostate = {};
 var myAudio = new Audio();
+myAudio.volume = 0.3;
 myAudio.src = "scratch.mp3";
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
